@@ -1,0 +1,27 @@
+
+* Intruções
+
+Nos arquivos, troque os valores `...` por código Racket. Se a elipse aparecer nos parâmetros da declaração da função, 
+significa que vc deve fornecer os parâmetros da função. Se a elipse aparecer no corpo das funções, significa que vc deve 
+substitui-la pelo código esperado. 
+
+Exemplo: se estamos pedindo a função que soma dois valores, podemos ter dado a entrada de nas duas formas abaixo. Na primeira,
+tanto parâmetros quanto corpo são pedidos. Na segunda, o corpo da função apenas é solicidado e neste caso já estamos indicando
+que a função é binária e o corpo de 'usar' os parâmetros =a= e =b=.
+
+#+BEGIN_SRC racket
+(define (soma ...)
+  ...)
+
+(define (soma a b)
+  ...)
+#+END_SRC
+
+Atenção, vc não deve renomear os arquivos ou as funções. Apenas os lugares indicados pelas elipses devem ser substituidos por código. A resposta para qualquer uma das entradas acima seria apenas trocar a elipse por código:
+
+#+BEGIN_SRC racket
+(define (soma a b)
+  (+ a b))
+#+END_SRC
+
+
