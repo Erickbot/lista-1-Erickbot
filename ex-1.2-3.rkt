@@ -17,7 +17,9 @@
   (cond
     ((and (> a b) (> b c)) (sum-of-squares a b))
     ((and (> a b) (< b c)) (sum-of-squares a c))
+    ((and (> b a) (> b c)) (sum-of-squares a b))
     (else (sum-of-squares b c))))
+
 
 (provide sum-of-squares-max3)
 
